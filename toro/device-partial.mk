@@ -15,25 +15,23 @@
 # Samsung blob(s) necessary for Toro hardware
 PRODUCT_PACKAGES := \
     BIP \
-    com.vzw.hardware.ehrpd.xml \
-    com.vzw.hardware.lte.xml \
-    com.vzw.vzwapnlib.xml \
-    ducati-m3 \
-    fRom \
-    gps.omap4 \
     IMSFramework \
-    libdrmwvmplugin \
-    lib_gsd4t \
-    libims_jni \
-    libims \
-    libpn544_fw \
+    RTN \
+    fRom \
     libsecril-client \
-    libsec-ril_lte \
+    lib_gsd4t \
+    libims \
+    libims_jni \
+    libsec-ril_lte
+
+PRODUCT_PACKAGES := \
+    libdrmwvmplugin \
     libwvdrm_L1 \
     libwvm \
     libWVStreamControlAPI_L1 \
-    RTN \
-    sirfgps \
+    com.vzw.hardware.ehrpd.xml \
+    com.vzw.hardware.lte.xml \
+    com.vzw.vzwapnlib.xml \
     VZWAPNLib \
     VZWAPNService
 
@@ -43,3 +41,8 @@ PRODUCT_PACKAGES := \
 #    SyncMLSvc #SyncML Service for communication to VZW. Required for SPG.
 #    libsyncml_core #SyncML Service for communication to VZW. Required for SPG.
 #    libsyncml_port #SyncML Service for communication to VZW. Required for SPG.
+
+# Added PRODUCT_PACKAGES
+#   VZWAPNLib, VZWAPNService, com.vzw.hardware.ehrpd.xml
+#   com.vzw.hardware.lte.xml, com.vzw.vzwapnlib.xml
+#   Needed for Verizon apps to function correctly
